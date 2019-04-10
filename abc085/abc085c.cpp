@@ -13,9 +13,13 @@ int main(){
     }
     for(a =0;a<=(y/10000);a++){
         for(b=0;b<=(y/5000);b++){
+
             c = (y-10000*a-5000*b)/1000;
+            if(c<0){
+                continue;
+            }
             if(a+b+c == n){
-                cout << a << b << c;
+                cout << a <<endl << b  << endl << c<<endl;
                 return 0;
             }
         }
