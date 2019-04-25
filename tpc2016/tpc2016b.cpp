@@ -1,22 +1,19 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <stack>
 using namespace std;
-queue<string> q;
+vector<vector<string> > v;
 int n;
 string in;
 
 int main(){
     cin >> in;
     n = in.size();
-    q.push(("()"));
-    string v;
-    while(q.front().size() != n){
-        v = q.front();
-        q.push("("+v+")");
-        q.push("()"+v);
-        q.push(v+"()");
-        q.pop();
+    v.at(2).push_back("()");
+
+    for(int i=2;i<=n;i=i+2){
+        
     } 
     int ans = 100000000;
     while(!q.empty()){
