@@ -20,18 +20,6 @@ int gcd(int n,int m){
     }
     return n;
 }
-int solve(){
-    int tmp1,tmp2;
-    while(!(q.size() == 1)){
-        tmp1 = q.front();
-        q.pop();
-        tmp2 = q.front();
-        q.pop();
-        q.push(gcd(tmp1,tmp2));
-    }
-    return q.front();
-}
-
 int main(){
     int n;
     cin >> n;
