@@ -1,11 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
-
-using namespace std;
-
-int main(){
-    
-=======
 #include <queue>
 #include<cassert>
 using namespace std;
@@ -70,5 +63,4 @@ int main(){
         cout << -1 << endl;
     }
     return 0;
->>>>>>> a301d04a9190cf24ecc44f5a1d83bceaf0fc375f
 }
