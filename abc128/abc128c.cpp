@@ -24,7 +24,7 @@ int main(){
         int tans2 = 0;
         for(int k = 0;k<m;k++){
             for(int j=0;j<n;j++){
-                if((1<<j)&s[j]){
+                if(((1<<j)&i)&&((1<<j)&s[k])){
                     tans ++;
                 }
             }
