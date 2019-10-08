@@ -7,4 +7,5 @@ int main(){
     int Max = max(p,max(q,r));
     int ans = p+q+r-Max;
     cout << ans << endl;
+    return 0;
 }
