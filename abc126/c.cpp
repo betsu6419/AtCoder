@@ -6,7 +6,7 @@ int main(){
     cin >> n >> k;
     double ans=0;
     for(double i=1;i<=n;i++){
-        double p = 1/n;
+        double p = 1.0/n;
         double tmp = i;
         while(tmp < k){
             p/=2;
@@ -14,6 +14,6 @@ int main(){
         }
         ans += p;
     }
-    cout << ans << endl;
+    printf("%.12f\n",ans);
     return 0;
 }
